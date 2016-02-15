@@ -18,7 +18,7 @@ import Lightyear.Core
 import Lightyear.Combinators
 import Lightyear.Errmsg
 
-%access public
+%access export
 
 ||| A parser that matches some particular character
 char : (Monad m, Stream Char str) => Char -> ParserT m str Char

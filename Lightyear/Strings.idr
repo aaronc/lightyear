@@ -18,7 +18,7 @@ import Lightyear.Errmsg
 
 import Lightyear.Char
 
-%access public
+%access export
 
 -- -------------------------------------------------------- [ Helper Functions ]
 private

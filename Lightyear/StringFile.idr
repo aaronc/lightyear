@@ -33,7 +33,7 @@ namespace Lightyear
                        else pure acc
 
 
-public
+export
 parseFile : (String -> e)
          -> (String -> String -> e)
          -> Parser a

@@ -9,11 +9,11 @@ module Lightyear.Core
 
 import Data.Fin
 
-%access public
+%access export
 %default total
 
 ||| Parse results
-data Result str a =
+public export data Result str a =
   ||| Sucess, returning the remaining string and the parser result
   Success str a |
   ||| Failure, returning a stack trace of errors based on `<?>`

@@ -10,7 +10,7 @@ module Errmsg
 import Lightyear.Core
 
 -- ------------------------------------------------------------------- [ Begin ]
-public
+export
 interface Layout str where
   lineLengths : str -> List Int
 
@@ -37,7 +37,7 @@ namespace Err
   unlines [s] = s
   unlines (s :: ss) = s ++ "\n" ++ Err.unlines ss
 
-public
+export
 formatError : Layout str => str
                          -> List (str, String)
                          -> String
